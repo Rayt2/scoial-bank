@@ -10,13 +10,18 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "USER")
-public class User {
+@Table(name = "CREDIT_CARD")
+public class CreditCard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String userName;
-    private String password;
+    private String firstName;
+    private String lastName;
+    private String cardName;
     private String email;
-    private String role;
+    private String phone;
+    private String gender;
+    private String status;
+
+
 }
