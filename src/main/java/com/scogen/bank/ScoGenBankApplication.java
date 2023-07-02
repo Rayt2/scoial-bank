@@ -48,7 +48,7 @@ public class ScoGenBankApplication {
                 new CreditCard(102,"Bitu","Swain","co-operate","swainp273@gmail.com","987678987","Male","pending"),
                 new CreditCard(103,"Mamali","Swain","Reward","swainp273@gmail.com","987678987","Male","pending"),
                 new CreditCard(104,"Chiku","Swain","Tour","swainp273@gmail.com","987678987","Male","pending"),
-                new CreditCard(105,"Sam","Swain","Travel","swainp273@gmail.com","987678987","Male","cancel")
+                new CreditCard(105,"Sam","Swain","Travel","swainp273@gmail.com","987678987","Male","cancelled")
 
         ).collect(Collectors.toList());
         repository.saveAll(users);

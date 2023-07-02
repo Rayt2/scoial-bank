@@ -22,6 +22,7 @@ public class CreditCardService {
         emailSenderService.sendSimpleEmail(creditCard.getEmail(),
                 "New Credit Card " +creditCard.getCardName(),
                 "New " +creditCard.getCardName() + "Application is Initiated");
+        creditCard.setStatus("pending");
         creditCardRepository.save(creditCard);
     }
 
@@ -41,7 +42,7 @@ return  creditCardsList;
                 emailSenderService.sendSimpleEmail(creditCard.getEmail(),
                         "New Credit Card " +creditCard.getCardName(),
                         "New " +creditCard.getCardName() + "Application is Approved" + "Card will deliver soon to register address");
-            } else if (creditCard.getStatus().equalsIgnoreCase("cancel")) {
+            } else if (creditCard.getStatus().equalsIgnoreCase("cancelled")) {
                 emailSenderService.sendSimpleEmail(creditCard.getEmail(),
                         "New Credit Card " +creditCard.getCardName(),
                         "New " +creditCard.getCardName() + "Application is Cancel due to invalid data");
