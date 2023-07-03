@@ -43,12 +43,12 @@ public class ScoGenBankApplication {
                 new User(104, "user3", "user3", "swainp273@gmail.com", AppConstants.RT)
         ).collect(Collectors.toList());
         List<CreditCard> creditCards = Stream.of(
-                new CreditCard(100,"Pritranjan","Swain","Business","swainp273@gmail.com","987678987","Male","approve"),
-                new CreditCard(101,"Titu","Swain","Student","swainp273@gmail.com","987678987","Male","approve"),
-                new CreditCard(102,"Bitu","Swain","co-operate","swainp273@gmail.com","987678987","Male","pending"),
-                new CreditCard(103,"Mamali","Swain","Reward","swainp273@gmail.com","987678987","Male","pending"),
-                new CreditCard(104,"Chiku","Swain","Tour","swainp273@gmail.com","987678987","Male","pending"),
-                new CreditCard(105,"Sam","Swain","Travel","swainp273@gmail.com","987678987","Male","cancelled")
+                new CreditCard(100,"Pritranjan","Swain","Business","swainp273@gmail.com","987678987","Male","approve","user"),
+                new CreditCard(101,"Titu","Swain","Student","swainp273@gmail.com","987678987","Male","approve","user1"),
+                new CreditCard(102,"Bitu","Swain","co-operate","swainp273@gmail.com","987678987","Male","pending","user2"),
+                new CreditCard(103,"Mamali","Swain","Reward","swainp273@gmail.com","987678987","Male","pending","user3"),
+                new CreditCard(104,"Chiku","Swain","Tour","swainp273@gmail.com","987678987","Male","pending","user"),
+                new CreditCard(105,"Sam","Swain","Travel","swainp273@gmail.com","987678987","Male","cancelled","user")
 
         ).collect(Collectors.toList());
         repository.saveAll(users);
